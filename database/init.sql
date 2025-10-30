@@ -1,0 +1,19 @@
+-- database/init.sql
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50),
+  password VARCHAR(255)
+);
+
+CREATE TABLE posts (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  content TEXT,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE logs (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50),
+  action VARCHAR(255),
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
