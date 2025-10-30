@@ -1,0 +1,35 @@
+/* 簡易スタイル */
+body { padding-bottom: 60px; }
+.container { max-width: 900px; }
+.card { margin-bottom: 1rem; }
+/* --- Cyber style additions --- */
+.cyber-panel { 
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(10,10,20,0.9), rgba(8,18,40,0.9));
+    color: #cfefff;
+    padding: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  }
+  .card-dark {
+    background: linear-gradient(180deg, rgba(0,10,20,0.7), rgba(0,30,50,0.6));
+    border: 1px solid rgba(80,200,255,0.08);
+    color: #dff7ff;
+  }
+  .card-dark .card-title { color: #aef0ff; }
+  .btn-danger { border: 1px solid rgba(255,120,120,0.15); }
+  .btn-success { border: 1px solid rgba(120,255,160,0.15); }
+  
+  /* small neon header effect */
+  .navbar-brand {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px rgba(80,200,255,0.15);
+  }
+  
+  /* module cards hover animation */
+  .card-dark:hover {
+    transform: translateY(-6px);
+    transition: transform 180ms ease-in-out, box-shadow 180ms ease-in-out;
+    box-shadow: 0 14px 40px rgba(0,180,255,0.06);
+  }
+  

@@ -1,0 +1,3 @@
+# .htaccess: ディレクトリインデックスを無効化して index.php を優先
+Options -Indexes
+DirectoryIndex index.php index.html
